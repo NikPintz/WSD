@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head><title>AV/Geo/Canvas</title></head>
+    <style>
+        body{
+            background: url(road.jpg);
+            background-position: left top;
+            background-repeat: no repeat;
+            background-size: cover;
+            opacity: 6;
+            font-weight: bold;
+        }
+        #s1{
+            padding: 10px;
+            width: 200px;
+            height: 70px;
+            color: chartreuse;
+        }
+        #s2{
+            color: azure;
+            text-decoration: double;
+            font-family: monospace;
+        }
+        form{
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+        }
+    </style>
+    <body>
+        <div id="s1">
+            <button onclick="getLocation()">Click to allow location</button>
+            <p id="demo"></p>
+        <script>
+            var x = document.getElementById("demo");
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+        </div>
+        <div style="z-index:2;position:relative;left:500px;top:10px;
+                width:500px;height:200px;padding:10px;color: rgb(238, 40, 0);"> 
+            New feature coming soon(canvas):<br>
+            <canvas id="myCanvas" width="500" height="200" style="border:2px dashed #ffcc00;">
+            </canvas>
+        </div>
+        <br><br>
+        <hr>
+        <section>
+            <h3>Press play below for a tool sound:</h3>
+            <audio src="pendrive_in.wav" controls="controls"></audio>
+        </section>
+        <section style="position:fixed; right:10px;top:400px;">                 
+            <p style="size:10px;color: rgb(16, 55, 84); font-size: 16px;"><b>Sponsored Advertisement:</b></p>
+            <video src="advert.mp4" height="300" width="480" controls="controls" autoplay="autoplay">Browser does not support video</video>
+        </section>
+        <br>
+        <h3>Please give us your feedback:</h3>
+        <form>
+            <label for="email">Enter your email:</label>
+            <input id="email" type="email" name="email"><br>
+            <label for="first?">Have you visited us before?</label>
+            <select id="first?" name="first?">
+                <option value="">Choose option</option>
+                <option value="YesServiced">Yes and I have used your services</option>
+                <option value="YesNoService">Yes but I have not used your services</option>
+                <option value="Never">Never</option>
+            </select><br>
+            <label for="datenow">What is the current date of your visit?:</label>
+            <input id="datenow" type="date" name="date"><br>
+            <label for="cars">How many cars do you own?</label>
+            <input id="cars" type="number" name="'numcars"><br>
+            <label for="rating">How would you rate this page?</label>
+            <input id="rating" type="range" name="rating"><br>
+            <p>If you have entered everything then your progress is:
+            <meter min="0" max="100" value="100"></meter></p>
+            <input type="submit">
+        </form>
+    </section>
+    <div style="position: absolute; right:10px; top:10px;"><p><a href="lab1home.html">HOME</a></p></div>
+    </body>
+</html>
