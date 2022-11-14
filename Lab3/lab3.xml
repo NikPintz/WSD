@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE carservice SYSTEM "lab3.dtd">
+<carservice>
+    <car>
+        <carID> 000 </carID>
+        <ownerID> 000 </ownerID>
+        <serviceID> 000 </serviceID>
+        <model> "model A" </model>
+        <year> 2001 </year>
+        <lastservice> 01-01-2002 </lastservice>
+        <nextservice> 01-01-2003 </nextservice>
+    </car>
+    <car>
+        <carID> 001 </carID>
+        <ownerID> 001 </ownerID>
+        <serviceID> 001 </serviceID>
+        <model> "model B" </model>
+        <year> 2002 </year>
+        <lastservice> 02-02-2002 </lastservice>
+        <nextservice> 02-02-2003 </nextservice>
+    </car>
+    <car>
+        <carID> 002 </carID>
+        <ownerID> 002 </ownerID>
+        <serviceID> 002 </serviceID>
+        <model> "model C" </model>
+        <year> 2000 </year>
+        <lastservice> 02-02-2000 </lastservice>
+        <nextservice> 02-02-2001 </nextservice>
+    </car>
+    <car>
+        <carID> 003 </carID>
+        <ownerID> 003 </ownerID>
+        <serviceID> 003 </serviceID>
+        <model> "model D" </model>
+        <year> 2003 </year>
+        <lastservice> 02-03-2003 </lastservice>
+        <nextservice> 02-03-2004 </nextservice>
+    </car>
+    <car>
+        <carID> 004 </carID>
+        <ownerID> 004 </ownerID>
+        <serviceID> 004 </serviceID>
+        <model> "model E" </model>
+        <year> 2003 </year>
+        <lastservice> 02-12-2003 </lastservice>
+        <nextservice> 02-02-2004 </nextservice>
+    </car>
+    <car>
+        <carID> 005 </carID>
+        <ownerID> 005 </ownerID>
+        <serviceID> 005 </serviceID>
+        <model> "model F" </model>
+        <year> 2004 </year>
+        <lastservice> 02-02-2004 </lastservice>
+        <nextservice> 02-02-2005 </nextservice>
+    </car>
+    <car>
+        <carID> 006 </carID>
+        <ownerID> 006 </ownerID>
+        <serviceID> 006 </serviceID>
+        <model> "model G" </model>
+        <year> 2003 </year>
+        <lastservice> 02-02-2005 </lastservice>
+        <nextservice> 12-12-2005 </nextservice>
+    </car>
+    <car>
+        <carID> 007 </carID>
+        <ownerID> 007 </ownerID>
+        <serviceID> 007 </serviceID>
+        <model> "model H" </model>
+        <year> 2003 </year>
+        <lastservice> 07-02-2004 </lastservice>
+        <nextservice> 17-09-2004 </nextservice>
+    </car>
+</carservice>
