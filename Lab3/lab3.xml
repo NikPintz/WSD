@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE carservice SYSTEM "lab3.dtd">
+<?xml-stylesheet type="text/xsl" href="lab3.xsl"?>
 <carservice>
     <car>
         <carID> 000 </carID>
