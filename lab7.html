@@ -6,6 +6,7 @@
 <h1>Cars in Service</h1>
 <p>Click the table headers to change the sorting criteria:</p>
 <div ng-app="myApp" ng-controller="namesCtrl">
+    <p>Search:<input id="s" name="s" type="text" ng-model="searchText"></p>
 <table border="1" width="100%">
     <tr>
         <th ng-click="orderByMe('id')">id</th>
@@ -16,7 +17,7 @@
         <th ng-click="orderByMe('lastService')">LastService</th>
         <th ng-click="orderByMe('nextService')">NextService</th>
     </tr>
-    <tr ng-repeat="x in names | orderBy:myOrderBy">
+    <tr ng-repeat="x in names | orderBy:myOrderBy |filter:searchText">
         <td>{{x.id|number}}</td>
         <td>{{x.ownerID|number}}</td>
         <td>{{x.sID|number}}</td>
@@ -31,8 +32,8 @@
 <script>
     angular.module('myApp', []).controller('namesCtrl', function($scope) {
         $scope.names = [
-            {"id":"001","ownerID":"001","sID":"001","model":"model1","cost":"5000","lastService":"02-02-2018","nextService":"02-02-2020"},
-            {"id":"002","ownerID":"002","sID":"002","model":"model2","cost":"5500","lastService":"12-04-2019","nextService":"22-04-2021"},
+            {"id":"001","ownerID":"001","sID":"001","model":"city","cost":"5000","lastService":"02-02-2018","nextService":"02-02-2020"},
+            {"id":"002","ownerID":"002","sID":"002","model":"country","cost":"5500","lastService":"12-04-2019","nextService":"22-04-2021"},
             {"id":"003","ownerID":"003","sID":"003","model":"model3","cost":"6300","lastService":"12-05-2018","nextService":"27-05-2020"},
             {"id":"004","ownerID":"004","sID":"004","model":"model4","cost":"4900","lastService":"23-03-2019","nextService":"05-03-2020"},
             {"id":"005","ownerID":"005","sID":"005","model":"model2","cost":"3999","lastService":"16-04-2018","nextService":"03-04-2020"},
