@@ -1,7 +1,6 @@
-{"Cars":[
-    {"id":"001","ownerID":"001","sID":"001","model":"model1","yr":"2001","lastService":"02-02-2018","nextService":"02-02-2020"},
-    {"id":"002","ownerID":"002","sID":"002","model":"model2","yr":"2003","lastService":"12-04-2019","nextService":"22-04-2021"},
-    {"id":"003","ownerID":"003","sID":"003","model":"model3","yr":"2004","lastService":"12-05-2018","nextService":"27-05-2020"},
-    {"id":"004","ownerID":"004","sID":"004","model":"model4","yr":"2004","lastService":"23-03-2019","nextService":"05-03-2020"},
-    {"id":"005","ownerID":"005","sID":"005","model":"model2","yr":"2002","lastService":"16-04-2018","nextService":"03-04-2020"},
-    {"id":"006","ownerID":"006","sID":"006","model":"model3","yr":"2003","lastService":"09-02-2019","nextService":"17-02-2020"}]}
+[{"id":"001","ownerID":"001","sID":"001","model":"model1","cost":"5000","lastService":"02-02-2018","nextService":"02-02-2020"},
+ {"id":"002","ownerID":"002","sID":"002","model":"model2","cost":"5500","lastService":"12-04-2019","nextService":"22-04-2021"},
+ {"id":"003","ownerID":"003","sID":"003","model":"model3","cost":"6300","lastService":"12-05-2018","nextService":"27-05-2020"},
+ {"id":"004","ownerID":"004","sID":"004","model":"model4","cost":"4900","lastService":"23-03-2019","nextService":"05-03-2020"},
+ {"id":"005","ownerID":"005","sID":"005","model":"model2","cost":"3999","lastService":"16-04-2018","nextService":"03-04-2020"},
+ {"id":"006","ownerID":"006","sID":"006","model":"model3","cost":"5769","lastService":"09-02-2019","nextService":"17-02-2020"}]
