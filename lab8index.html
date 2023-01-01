@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Angular Routing
+    </title>
+</head> 
+<style>
+    #nav{
+        width: 19%;
+        display: inline-block;
+        background: #429cd6;
+        border: 1px solid #3c87b2;
+
+    }
+    #page-content{
+        width: 79%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 8px;
+        padding-top: 0px;
+    }
+    ul{
+        list-style: none;
+        padding-right: 10px;
+    }
+    li{
+        background-color: #aaeb15;
+        color: white;
+        margin: 5px;
+        text-decoration: none;
+        text-align: center;
+        padding: 3px;
+        font-size: 20px;
+        font-family: 'Helvetica', sans-serif;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<!-- Load AngularJS and Angular Route JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<body ng-app="myApp" bgcolor="#07f2de">
+<!-- AngularJS Navigation -->    
+<div id="nav">
+    <ul>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!about">About</a></li>
+        <li><a href="#!booking">Bookings</a></li>
+        <li><a href="#!active">Active Jobs</a></li>
+    </ul>
+</div>
+<div id="page-content">
+    <h1>Car Service</h1>
+    <!-- this is where page content will be loaded -->
+    <div ng-view></div>
+</div>
+<!-- Load AngularJS Module and Angular Route Configuration -->
+<script type="text/javascript">
+    // create the module and name it scotchApp
+    var app = angular.module("myApp", ['ngRoute']);
+    // configure routes
+    app.config(function($routeProvider){
+    $routeProvider
+    .when("/", {template:"<p>AngularJS Single Page Application(SPA).</p>"})
+    .when("/about", {templateUrl : "about.html"})
+    .when("/booking", {templateUrl : "booking.html"})
+    .when("/active", {templateUrl : "lab7.html"})
+    });
+</script>
+</body>
+</html>
