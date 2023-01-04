@@ -30,8 +30,8 @@ abc.controller("abcCtrl", ($rootScope, $http)=>{
 })
 
 abc.controller("homeCtrl", function($scope, $rootScope){
-    $rootScope.var = "Todays meetings"
-    $scope.message = "There are no meetings for today!"
+    $rootScope.var = "Welcome user!"
+    $scope.message = "Menu in top right--^"
 })
 
 abc.controller("jobCtrl",function($scope,$rootScope, $http)
