@@ -1,0 +1,31 @@
+
+
+<div>
+    <h1 style="height: 1rem;background-color: rgb(0, 221, 255);"></h1>
+    <div class="container-fluid px-5 py-3">
+        <table class="table table-borderless table-hover container-fluid" style="border:1px">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>ownerID</th>
+                    <th>sID</th>
+                    <th>model</th>
+                    <th>cost</th>
+                    <th>lastService</th>
+                    <th>nextService</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="i in items">
+                <tr>
+                    <td>{{i.id | uppercase}}</td>
+                    <td>{{i.ownerID}}</td>
+                    <td>{{i.sID}}</td>
+                    <td>{{i.model | uppercase}}</td>
+                    <td>{{i.cost | currency}}%</td>
+                    <td>{{i.lastService}}</td>
+                    <td>{{i.nextService}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+[{"id":"001","ownerID":"001","sID":"001","model":"city","cost":"5000","lastService":"02-02-2018","nextService":"02-02-2020"},
+ {"id":"002","ownerID":"002","sID":"002","model":"country","cost":"5500","lastService":"12-04-2019","nextService":"22-04-2021"},
+ {"id":"003","ownerID":"003","sID":"003","model":"jazz","cost":"6300","lastService":"12-05-2018","nextService":"27-05-2020"},
+ {"id":"004","ownerID":"004","sID":"004","model":"a6","cost":"4900","lastService":"23-03-2019","nextService":"05-03-2020"},
+ {"id":"005","ownerID":"005","sID":"005","model":"c45","cost":"3999","lastService":"16-04-2018","nextService":"03-04-2020"},
+ {"id":"006","ownerID":"006","sID":"006","model":"WR-V","cost":"5769","lastService":"09-02-2019","nextService":"17-02-2020"}]
