@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retrieving Data from JSON</title>
+    <script>
+      const onClick = async () => {
+        const data = await fetch("http://localhost:3000/json", {
+          method: "GET",
+        })
+          .then((res) => res.json())
+          .then((data) => data);
+        document.getElementById("name").innerHTML = data.name;
+      };
+    </script>
+  </head>
+  <body>
+    <p>DATA</p>
+    <p id="name"></p>
+    <button onclick="onClick()">Show data</button>
+  </body>
+</html>
+
+<!--run in terminal node lab9.js then in browser localhost:3000/lab9.html-->
