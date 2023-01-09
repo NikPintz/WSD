@@ -2,8 +2,8 @@
 const pool = createPool({
   host: "localhost",
   user: "root",
-  password: "",
-  database: "test",
+  password: "password",
+  database: "mydb",
   connectionLimit: 10
 })
 
