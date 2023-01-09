@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <article>
+    <section>
+      <form method='post' action='/insert'>
+        <div>
+          <h1>Insert Details</h1>
+          Id:        <input type="number" name="id" /><br>
+          Name:      <input type="text" name="name" /><br>
+          Mobile No: <input type="number" name="mobno" /><br>
+          Email:     <input type="email" name="email" /><br>
+          Car Model: <input type="text" name="model" /><br>
+          SiD:       <input type="number" name="siddate" /><br>
+          
+          <button type='submit'>INSERT</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <form method='post' action='/update'>
+        <div>
+          <h1>Update Details</h1>
+          Enter Id: <input type="number" name="cust_id" /><br>
+          Choose the data to be edited:
+          <select name="upd_data" id="custdata">
+            <option value="cust_name">Name</option>
+            <option value="cust_mobno">Mobile No</option>
+            <option value="cust_email">Email</option>
+            <option value="cust_model">Model</option>
+            <option value="cust_sid">SiD</option>
+          </select>
+          <input type="text" name="upd_value">
+          <button type='submit'>UPDATE</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <form method='post' action='/delete'>
+        <div>
+          <h1>Delete Record</h1>
+          Enter Id: <input type="number" name="del_cust" /><br>
+          <button type='submit'>DELETE</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <form method='post' action='/search'>
+        <div>
+          <h1>Search Records</h1>
+          Enter id: <input type="number" name="search_cust" /><br>
+          <button type='submit'>Search</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <form method='post' action='/display'>
+        <div>
+          <h1>Click to display all records</h1>
+          <button type='submit'>Click!</button>
+        </div>
+      </form>
+    </section>
+  </article>
+</body>
+
+</html>
