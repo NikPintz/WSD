@@ -8,8 +8,8 @@ const app = express();
 const connection = mysql.createConnection({
   user: "root",
   host: "localhost",
-  password: "password",
-  database: "domain",
+  password: "topgear2014",
+  database: "wsdb",
 });
 
 connection.connect(function (error) {
@@ -18,8 +18,8 @@ connection.connect(function (error) {
 })
 
 
-app.get("/adminpage", function (req, res) {
-  res.sendFile(__dirname + "/adminpage.html")
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/formpg.html")
 })
 
 app.post("/insert", encoder, function (req, res) {
