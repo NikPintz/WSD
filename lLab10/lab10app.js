@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "demo",
+    database: "mydb",
     connectionLimit: 10
 })
 
